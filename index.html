@@ -4,36 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css"
+      integrity="sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Oh My Food!</title>
   </head>
 
   <body>
     <header>
-       <h1>Oh My Food!</h1>
+      <h1>Ohmyfood</h1>
+      <form class="header__search" action="search">
+        <i class="fa-solid fa-location-dot"></i>Paris, Belleville
+      </form>
     </header>
     <main>
-Réservez le menu qui vous convient
-Découvrez des restaurants d'exception, sélectionnés par nos soin.
-Explorer nos restaurants
+      <div class="main__top">
+        <p class="top__reserve">Réservez le menu qui vous convient</p>
+        <p class="top__discover">Découvrez des restaurants d'exception,</br> sélectionnés par nos soin.</p>
+        
+        <button class="top__button">Explorer nos restaurants</button>
+      </div>
 
-Fonctionnement
-1- choisissez un restaurants
-2-composez votre menu 
-3-dégustez au restaurant
+      <div class="selection">
+        <p>Fonctionnement</p>
+        <button>1- choisissez un restaurants</button>
+        <button>2-composez votre menu</button>
+        <button>3-dégustez au restaurant</button>
+      </div>
 
-Restaurants 
-- La palette du goût
-- Le délice des sens
-- La note enchantée
-- À la française Entrées
+      <div class="locations">
+        <p>Restaurants</p> 
+        <figure class="locations__restaurant">
+          <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+          <figcaption>La palette du goût Ménilmontant <i class="fa-regular fa-heart"></i></figcaption>
+        </figure>
+        <figure class="locations__restaurant">
+          <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="- La note enchantée">
+          <figcaption>La note enchantée Charonne <i class="fa-regular fa-heart"></i></figcaption>
+        </figure>
+        <figure class="locations__restaurant">
+          <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="- À la française">
+          <figcaption>À la française Cité Rouge <i class="fa-regular fa-heart"></i></figcaption>
+        </figure>
+        <figure class="locations__restaurant">
+          <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+          <figcaption>Le délice des sens Folie-Méricourt <i class="fa-regular fa-heart"></i></figcaption>
+        </figure>
+
+      </div>
     </main>
     <footer>
-      
+      <h4>Ohmyfood</h4>
+      <ul class="footer__list">
+        <li><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
+        <li><i class="fa-solid fa-handshake-angle"></i>Devenir Partenaire</li>
+        <li>Mentions légales</li>
+        <li>Contact</li>
+      </ul>
     </footer>
   </body>
 </html>
