@@ -10,6 +10,7 @@
 
 body {
   background: #f6f6f6;
+  margin: 0px;
 }
 h1,
 h2,
@@ -24,6 +25,7 @@ h6 {
 header {
   background: #fff;
   text-align: center;
+  padding-top: 20px;
 }
 
 .header__search {
@@ -37,6 +39,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 .top__reserve {
   text-align: center;
@@ -53,6 +56,12 @@ header {
   border-radius: 20px;
   color: #fff;
   background-color: #a75cdb;
+  background-image: linear-gradient(
+    to right,
+    #da22ff 0%,
+    #9733ee 51%,
+    #da22ff 100%
+  );
   border-style: none;
   font-weight: bold;
 }
@@ -61,12 +70,25 @@ header {
 .selection {
   display: flex;
   flex-direction: column;
+  margin: 0px;
   background-color: #fff;
   padding: 20px;
   gap: 10px;
 }
 .selection p {
   font-weight: bold;
+}
+.btn__selection {
+  width: 325px;
+  height: 70px;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  gap: 40px;
+}
+.btn__selection:hover {
+  background-color:#F5EDFF;
 }
 
 /*aperçu restaurant*/
@@ -77,6 +99,7 @@ header {
   border-radius: 20px;
   overflow: hidden;
 }
+
 .locations__restaurant img {
   width: 100%;
   height: 75%;
