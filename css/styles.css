@@ -9,7 +9,7 @@
 }
 
 body {
-  background: #f6f6f6;
+  background: #fff;
   margin: 0px;
   width: 365px;
 }
@@ -20,81 +20,11 @@ h4,
 h5,
 h6 {
   font-family: Shrikhand;
-}
-
-/*header infos*/
-header {
-  background: #fff;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.header__search {
-  background: #eaeaea;
-  padding: 15px;
-  border-top-style: inset;
-}
-
-/*top infos*/
-.main__top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-}
-.top__reserve {
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 0px;
-}
-.top__discover {
-  font-weight: 42px;
-}
-.top__button {
-  width: 220px;
-  height: 50px;
-  border-radius: 20px;
-  color: #fff;
-  background-color: #a75cdb;
-  background-image: linear-gradient(
-    to right,
-    #da22ff 0%,
-    #9733ee 51%,
-    #da22ff 100%
-  );
-  border-style: none;
-  font-weight: bold;
-}
-
-/*selection of the menu*/
-.selection {
-  display: flex;
-  flex-direction: column;
   margin: 0px;
-  background-color: #fff;
-  padding: 20px;
-  gap: 10px;
-}
-.selection p {
-  font-weight: bold;
-}
-.btn__selection {
-  width: 325px;
-  height: 70px;
-  background-color: #f6f6f6;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  gap: 40px;
-  box-shadow: 5px 5px 15px 5px #eaeaea;
-}
-.btn__selection:hover {
-  background-color: #f5edff;
 }
 
 /*aperçu restaurant*/
-.locations p{
+.locations p {
   padding-left: 20px;
   font-weight: bold;
 }
@@ -105,9 +35,7 @@ header {
   border-radius: 20px;
   overflow: hidden;
   margin: 20px;
-}
-.locations__restaurant figcaption {
-  height: 80px;
+  position: relative;
 }
 
 .locations__restaurant img {
@@ -115,18 +43,31 @@ header {
   height: 175px;
   object-fit: cover;
 }
+.label {
+  color: #008766;
+  text-align: center;
+  padding-top: 5px;
+  background-color: #99e2d0;
+  height: 30px;
+  width: 80px;
+  border-radius: 2px;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
 .restaurant__description {
   display: flex;
+  height: 80px;
   justify-content: space-around;
+  margin-top: 20px;
+  padding: 0px 14px 0px 14px;
+}
+.locations__spot {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
 }
 
-/*Footer*/
-
-footer {
-  color: #fff;
-  background-color: #353535;
-}
-
-.footer__list li {
-  list-style: none;
+.fa-heart:hover{
+  cursor:pointer;
 }

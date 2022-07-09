@@ -1,0 +1,17 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &--grey {
+    background-color: $background-grey;
+    width:100%;
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 25px;
+  margin-bottom: 50px;
+
+  &__btn {
+    width: 325px;
+    height: 70px;
+    border: 1.5px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 3px #eaeaea;
+  }
+
+  &__fonction {
+    background-color: $background-grey;
+    font-weight: bold;
+    gap: 40px;
+  }
+
+  &__btn:hover {
+    background-color: #f5edff;
+  }
+}
+
+.fa-1,
+.fa-2,
+.fa-3 {
+  padding-top: 6px;
+  height: 25px;
+  width: 25px;
+  color: #fff;
+  border-radius: 25px;
+  background-color: $color-primary;
+  position: absolute;
+  left: 10px;
+}

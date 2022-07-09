@@ -1,0 +1,118 @@
+/* mettre les variables comme les couleurs*/
+/*addittional colors*/
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 55px;
+  background-color: #f6f6f6;
+}
+.top__reserve {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.top__discover {
+  font-weight: 42px;
+}
+.top__button {
+  width: 220px;
+  height: 50px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #a75cdb;
+  background-image: linear-gradient(to bottom, #E872DA 10%, #9356DC 100%);
+  border-style: none;
+  font-weight: bold;
+}
+
+.header {
+  background: #fff;
+  text-align: center;
+}
+.header__title {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  margin: 0px;
+  border-top: none;
+  position: relative;
+  padding: 20px 10px 5px 20px;
+}
+.header__search {
+  background: #eaeaea;
+  height: 50px;
+  justify-content: center;
+  padding: 10px 0px 10px 0px;
+  font-size: 20px;
+}
+.header__placeholder {
+  border: none;
+  width: 150px;
+  background-color: inherit;
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+}
+
+.footer {
+  color: #fff;
+  background-color: #353535;
+}
+.footer__title {
+  padding: 20px 0px 20px 0px;
+}
+.footer__list li {
+  list-style: none;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.background--grey {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.background__title {
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+.button__btn {
+  width: 325px;
+  height: 70px;
+  border: 1.5px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px 3px #eaeaea;
+}
+.button__fonction {
+  background-color: #f6f6f6;
+  font-weight: bold;
+  gap: 40px;
+}
+.button__btn:hover {
+  background-color: #f5edff;
+}
+
+.fa-1,
+.fa-2,
+.fa-3 {
+  padding-top: 6px;
+  height: 25px;
+  width: 25px;
+  color: #fff;
+  border-radius: 25px;
+  background-color: #9356DC;
+  position: absolute;
+  left: 10px;
+}/*# sourceMappingURL=main.css.map */
