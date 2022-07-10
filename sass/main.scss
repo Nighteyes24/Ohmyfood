@@ -1,9 +1,19 @@
 @import "./Utils/variables";
+
+@import "./Base/base";
+
 @import "./Composants/top";
 @import "./Composants/header";
-@import "./Layout/footer";
 @import "./Composants/background";
 @import "./Composants/buttons";
+@import "./Composants/label";
+
+@import "./Layout/footer";
+
+@import "./Pages/acceuil";
+@import "./Pages/restaurant";
+
+
 
 
 // .base/ : les fichiers qui définissent les fondations de votre site, par ex. la police de caractères, les normes que vous voulez appliquer sur tout votre site cf. le box-sizing ;

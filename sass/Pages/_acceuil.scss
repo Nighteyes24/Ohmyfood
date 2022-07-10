@@ -1,0 +1,32 @@
+.locations p {
+  padding-left: 20px;
+  font-weight: bold;
+}
+.locations__restaurant {
+  width: auto;
+  height: 252px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px;
+  position: relative;
+}
+
+.locations__restaurant img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+}
+
+.restaurant__description {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0px 14px 0px 14px;
+}
+.locations__spot {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
