@@ -42,7 +42,7 @@ h6 {
   border-radius: 20px;
   color: #fff;
   background-color: #a75cdb;
-  background-image: linear-gradient(to bottom, #E872DA 10%, #9356DC 100%);
+  background-image: linear-gradient(to bottom, #e872da 10%, #9356DC 100%);
   border-style: none;
   font-weight: bold;
 }
@@ -218,7 +218,7 @@ h6 {
   border-radius: 20px;
   color: #fff;
   background-color: #a75cdb;
-  background-image: linear-gradient(to bottom, #E872DA 10%, #9356DC 100%);
+  background-image: linear-gradient(to bottom, #e872da 10%, #9356DC 100%);
   border-style: none;
   font-weight: bold;
   cursor: pointer;
