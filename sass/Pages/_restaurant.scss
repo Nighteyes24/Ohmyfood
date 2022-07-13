@@ -1,4 +1,3 @@
-
 .top__menu {
   display: flex;
   flex-direction: row;
@@ -9,20 +8,21 @@
 
 .menu {
   align-items: center;
+  background-color: #f6f6f6;
   &__peek img {
     width: 100%;
   }
   &__container {
     border-radius: 20px 20px 0px 0px;
     background-color: #f6f6f6;
-    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
-
+    position: relative;
+    top: -40px;
   }
   &__title {
+    padding-top: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -32,32 +32,36 @@
 }
 
 .menu__meal {
+  width: 100%;
   list-style: none;
-  padding-left: 10px;
-
+  margin: 0;
+  padding: 20px;
 
   &__title {
     font-weight: bold;
-    text-decoration: underline rgb(31, 235, 239);
+    &:after {
+      content: "";
+      display: block;
+      width: 32px;
+      padding-top: 3px;
+      border-bottom: 2px solid rgb(31, 235, 239);
+    }
   }
 
   &__card {
-    width: 90%;
-    height: 100px;
     display: flex;
     flex-direction: column;
+    padding: 10px 10px;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
-    padding-left: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
     justify-content: space-around;
     margin-top: 20px;
-    padding-right: 10px;
   }
 
   &__detail__name {
+    margin: 0;
     font-weight: bold;
-    height: 20px;
   }
 
   &__detail__recipe {
@@ -67,26 +71,31 @@
     &__detail--price {
       font-weight: bold;
     }
+    :hover {
+      color: #fff;
+      background-color: $color-tertiary;
+      border: radius 20px;
+    }
   }
-  .hidden {
-    color: #fff;
-    background-color: $color-tertiary;
-    border-radius: 0px 40px 40px 0px;
+  .only_hover {
+    display: none;
+    position: absolute;
   }
 }
 
-  /*button*/
-  .menu__button {
-    width: 220px;
-    height: 50px;
-    border-radius: 20px;
-    color: #fff;
-    background-color: #a75cdb;
-    background-image: linear-gradient(to bottom,
-        #e872da 10%,
-        $color-primary 100%);
-    border-style: none;
-    font-weight: bold;
-    cursor: pointer;
-
-  }
+/*button*/
+.menu__button {
+  width: 220px;
+  height: 50px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #a75cdb;
+  background-image: linear-gradient(
+    to bottom,
+    #e872da 10%,
+    $color-primary 100%
+  );
+  border-style: none;
+  font-weight: bold;
+  cursor: pointer;
+}

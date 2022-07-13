@@ -3,12 +3,13 @@
 @import "./Base/base";
 
 @import "./Composants/top";
-@import "./Composants/header";
 @import "./Composants/background";
 @import "./Composants/buttons";
 @import "./Composants/label";
+@import "./Composants/heart.scss";
 
 @import "./Layout/footer";
+@import "./Layout/header";
 
 @import "./Pages/acceuil";
 @import "./Pages/restaurant";

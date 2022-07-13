@@ -1,38 +1,38 @@
 .button {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  width: 100%;
+  padding: 20px;
   gap: 25px;
   margin-bottom: 50px;
 
   &__btn {
-    width: 325px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+    gap: 20px;
     height: 70px;
     border: 1.5px;
     border-radius: 20px;
     box-shadow: 3px 3px 5px 3px #eaeaea;
   }
 
-  &__fonction {
-    background: color #f6f6f6;
-    font-weight: bold;
-    gap: 40px;
-  }
-
-  &__btn:hover {
+  &__btn--violet {
     background-color: #f5edff;
   }
-}
+  &__btn__font--violet {
+    color: #9356dc;
+  }
 
-.fa-1,
-.fa-2,
-.fa-3 {
-  padding-top: 6px;
-  height: 25px;
-  width: 25px;
-  color: #fff;
-  border-radius: 25px;
-  background-color: $color-primary;
-  position: absolute;
-  left: 10px;
+  &__number {
+    padding-top: 6px;
+    height: 25px;
+    width: 25px;
+    color: #fff;
+    border-radius: 25px;
+    background-color: $color-primary;
+    position: absolute;
+    left: 10px;
+  }
 }

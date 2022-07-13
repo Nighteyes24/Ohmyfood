@@ -6,7 +6,6 @@
 body {
   background: #fff;
   margin: 0px;
-  width: 365px;
 }
 
 h1,
@@ -47,75 +46,47 @@ h6 {
   font-weight: bold;
 }
 
-.header {
-  background: #fff;
-  text-align: center;
-}
-.header__title {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
-  margin: 0px;
-  border-top: none;
-  position: relative;
-  padding: 20px 10px 5px 20px;
-}
-.header__search {
-  background: #eaeaea;
-  height: 50px;
-  justify-content: center;
-  padding: 10px 0px 10px 0px;
-  font-size: 20px;
-}
-.header__placeholder {
-  border: none;
-  width: 150px;
-  background-color: inherit;
-  font-weight: bolder;
-  font-size: large;
-  text-align: center;
-}
-
 .background {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+}
+.background__title {
+  align-items: flex-start;
+  font-weight: bold;
+  margin-top: 50px;
+  padding: 20px;
 }
 .background--grey {
   background-color: #f6f6f6;
-  width: 100%;
-}
-.background__title {
-  font-weight: bold;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  padding-left: 20px;
+  padding-bottom: 50px;
 }
 
 .button {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  width: 100%;
+  padding: 20px;
   gap: 25px;
   margin-bottom: 50px;
 }
 .button__btn {
-  width: 325px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 40px;
+  gap: 20px;
   height: 70px;
   border: 1.5px;
   border-radius: 20px;
   box-shadow: 3px 3px 5px 3px #eaeaea;
 }
-.button__fonction {
-  background: color #f6f6f6;
-  font-weight: bold;
-  gap: 40px;
-}
-.button__btn:hover {
+.button__btn--violet {
   background-color: #f5edff;
 }
-
-.fa-1,
-.fa-2,
-.fa-3 {
+.button__btn__font--violet {
+  color: #9356dc;
+}
+.button__number {
   padding-top: 6px;
   height: 25px;
   width: 25px;
@@ -146,13 +117,38 @@ h6 {
 .footer {
   color: #fff;
   background-color: #353535;
-  padding-bottom: 20px;
+  padding: 20px;
 }
-.footer__title {
-  padding: 20px 0px 20px 0px;
-}
-.footer__list li {
+.footer__list {
+  margin: 0;
   list-style: none;
+}
+
+.header {
+  background: #fff;
+  text-align: center;
+}
+.header__title {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  margin: 0px;
+  border-top: none;
+  position: relative;
+  padding: 20px 10px 5px 20px;
+}
+.header__search {
+  background: #eaeaea;
+  height: 50px;
+  justify-content: center;
+  padding: 10px 0px 10px 0px;
+  font-size: 20px;
+}
+.header__placeholder {
+  border: none;
+  width: 150px;
+  background-color: inherit;
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
 }
 
 .locations p {
@@ -161,12 +157,9 @@ h6 {
 }
 
 .locations__restaurant {
-  width: auto;
-  height: 252px;
   background-color: #fff;
   border-radius: 20px;
   overflow: hidden;
-  margin: 20px;
   position: relative;
 }
 
@@ -179,10 +172,8 @@ h6 {
 
 .restaurant__description {
   display: flex;
-  height: 80px;
   justify-content: space-between;
-  margin-top: 20px;
-  padding: 0px 14px 0px 14px;
+  padding: 10px 14px;
 }
 
 .locations__spot {
@@ -203,6 +194,7 @@ h6 {
 
 .menu {
   align-items: center;
+  background-color: #f6f6f6;
 }
 .menu__peek img {
   width: 100%;
@@ -210,13 +202,14 @@ h6 {
 .menu__container {
   border-radius: 20px 20px 0px 0px;
   background-color: #f6f6f6;
-  padding-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
+  position: relative;
+  top: -40px;
 }
 .menu__title {
+  padding-top: 40px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -225,30 +218,34 @@ h6 {
 }
 
 .menu__meal {
+  width: 100%;
   list-style: none;
-  padding-left: 10px;
+  margin: 0;
+  padding: 20px;
 }
 .menu__meal__title {
   font-weight: bold;
-  -webkit-text-decoration: underline rgb(31, 235, 239);
-          text-decoration: underline rgb(31, 235, 239);
+}
+.menu__meal__title:after {
+  content: "";
+  display: block;
+  width: 32px;
+  padding-top: 3px;
+  border-bottom: 2px solid rgb(31, 235, 239);
 }
 .menu__meal__card {
-  width: 90%;
-  height: 100px;
   display: flex;
   flex-direction: column;
+  padding: 10px 10px;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
-  padding-left: 5px;
   justify-content: space-around;
   margin-top: 20px;
-  padding-right: 10px;
 }
 .menu__meal__detail__name {
+  margin: 0;
   font-weight: bold;
-  height: 20px;
 }
 .menu__meal__detail__recipe {
   display: flex;
@@ -257,10 +254,14 @@ h6 {
 .menu__meal__detail__recipe__detail--price {
   font-weight: bold;
 }
-.menu__meal .hidden {
+.menu__meal__detail__recipe :hover {
   color: #fff;
   background-color: #99E2D0;
-  border-radius: 0px 40px 40px 0px;
+  border: radius 20px;
+}
+.menu__meal .only_hover {
+  display: none;
+  position: absolute;
 }
 
 /*button*/
