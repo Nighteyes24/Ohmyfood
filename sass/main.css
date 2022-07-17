@@ -114,6 +114,32 @@ h6 {
   cursor: pointer;
 }
 
+.heart {
+  cursor: pointer;
+  position: absolute;
+  right: 14px;
+}
+.heart__full {
+  cursor: pointer;
+  opacity: 0%;
+  background: black;
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.heart__full:hover {
+  opacity: 100%;
+  cursor: pointer;
+  transition: color 0.4s ease-in;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .footer {
   color: #fff;
   background-color: #353535;
@@ -122,6 +148,10 @@ h6 {
 .footer__list {
   margin: 0;
   list-style: none;
+}
+.footer__link {
+  color: #fff;
+  text-decoration: none;
 }
 
 .header {

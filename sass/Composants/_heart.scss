@@ -1,0 +1,28 @@
+.heart {
+  cursor: pointer;
+  position: absolute;
+  right: 14px;
+
+
+  &__full {
+    cursor: pointer;
+    opacity: 0%;
+    background: black;
+    background-clip: border-box;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+
+    &:hover {
+      opacity: 100%;
+      cursor: pointer;
+      transition: color 0.4s ease-in;
+      background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+      background-clip: border-box;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
