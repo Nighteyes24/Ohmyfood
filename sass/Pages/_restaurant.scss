@@ -69,17 +69,15 @@
     justify-content: space-between;
 
     &__detail--price {
-      font-weight: bold;
-    }
-    :hover {
-      color: #fff;
-      background-color: $color-tertiary;
-      border: radius 20px;
+      font-weight: bolder;
     }
   }
   .only_hover {
-    display: none;
-    position: absolute;
+    color: #fff;
+    :hover {
+      color: $color-tertiary;
+      border: radius 20px;
+    }
   }
 }
 

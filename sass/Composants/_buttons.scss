@@ -15,7 +15,11 @@
     height: 70px;
     border: 1.5px;
     border-radius: 20px;
-    box-shadow: 3px 3px 5px 3px #eaeaea;
+    box-shadow: 7px 7px 7px 0px rgba(0,0,0,0.25);
+    &:hover{
+      background-color: whitesmoke;
+      box-shadow: 7px 7px 7px 0px rgba(0,0,0,0.17);
+    }
   }
 
   &__btn--violet {
