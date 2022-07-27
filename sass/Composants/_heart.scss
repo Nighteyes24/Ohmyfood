@@ -3,26 +3,27 @@
   position: absolute;
   right: 14px;
 
+  &__empty {
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.4s ease;
+  }
 
   &__full {
     cursor: pointer;
-    opacity: 0%;
-    background: black;
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
     background-clip: border-box;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
-
-    &:hover {
-      opacity: 100%;
-      cursor: pointer;
-      transition: color 0.4s ease-in;
-      background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-      background-clip: border-box;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+    transition: all 0.4s ease;
+    transform: scale(0);
+  }
+  &:hover &__full {
+    transform: scale(1);
+  }
+  &:hover &__empty {
+    opacity: 0;
   }
 }

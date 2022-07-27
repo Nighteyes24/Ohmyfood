@@ -123,30 +123,34 @@ h6 {
   position: absolute;
   right: 14px;
 }
+.heart__empty {
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.4s ease;
+}
 .heart__full {
   cursor: pointer;
-  opacity: 0%;
-  background: black;
-  background-clip: border-box;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-}
-.heart__full:hover {
-  opacity: 100%;
-  cursor: pointer;
-  transition: color 0.4s ease-in;
   background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
   background-clip: border-box;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: relative;
+  transition: all 0.4s ease;
+  transform: scale(0);
+}
+.heart:hover .heart__full {
+  transform: scale(1);
+}
+.heart:hover .heart__empty {
+  opacity: 0;
 }
 
 .ring {
-  position: -webkit-sticky;
-  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
   z-index: 1;
   top: 50%;
   left: 50%;
@@ -156,9 +160,6 @@ h6 {
   background: whitesmoke;
   border: 3px solid #9356DC;
   border-radius: 50%;
-  text-align: center;
-  line-height: 150px;
-  font-size: 20px;
   color: #9356DC;
   letter-spacing: 4px;
   text-transform: uppercase;

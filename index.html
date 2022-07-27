@@ -30,8 +30,7 @@
     <title>Oh My Food!</title>
   </head>
 
-  <body>  
-
+  <body>
     <header class="header">
       <h1 class="header__title">Ohmyfood</h1>
       <form class="header__search" action="search">
@@ -45,11 +44,14 @@
     </header>
 
     <main>
-
-      <div class="ring">
-        Loading
-        <span></span>
+      <!--Page Loader-->
+      <div class="loader">
+        <div class="ring">
+          <h4 class="ring__title">Oh... My...</h4>
+          <span></span>
+        </div>
       </div>
+      <!--end Page Loader-->
 
       <div class="top">
         <p class="top__reserve">Réservez le menu qui vous convient</p>
@@ -95,8 +97,10 @@
             <div class="locations__spot">
               <strong>La palette du goût</strong> Ménilmontant
             </div>
-            <i class="heart fa-regular fa-heart"></i>
-            <i class="heart__full fa-solid fa-heart"></i>
+            <div class="heart">
+              <i class="heart__empty fa-regular fa-heart"></i>
+              <i class="heart__full fa-solid fa-heart"></i>
+            </div>
           </figcaption>
         </figure>
 
