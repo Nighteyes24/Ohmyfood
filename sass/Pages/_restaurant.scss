@@ -11,6 +11,8 @@
   background-color: #f6f6f6;
   &__peek img {
     width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
   }
   &__container {
     border-radius: 20px 20px 0px 0px;
@@ -57,43 +59,38 @@
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
     justify-content: space-around;
     margin-top: 20px;
+    animation: appear 2s;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  &__detail__name {
+  &__name {
     margin: 0;
     font-weight: bold;
   }
 
-  &__detail__recipe {
+  &__recipe {
     display: flex;
     justify-content: space-between;
-
-    &__detail--price {
-      font-weight: bolder;
+  }
+  .menu__meal__check {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: aquamarine;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    transition: width 6s;
+    &:hover {
+      width: 25%;
     }
   }
-  .only_hover {
+  .fa-circle-check {
+    cursor: pointer;
     color: #fff;
-    :hover {
-      color: $color-tertiary;
-      border: radius 20px;
+    &:hover {
+      transform: rotate(359deg);
     }
   }
-}
-
-/*button*/
-.menu__button {
-  width: 220px;
-  height: 50px;
-  border-radius: 20px;
-  color: #fff;
-  background-color: #a75cdb;
-  background-image: linear-gradient(
-    to bottom,
-    #e872da 10%,
-    $color-primary 100%
-  );
-  border-style: none;
-  font-weight: bold;
-  cursor: pointer;
 }
