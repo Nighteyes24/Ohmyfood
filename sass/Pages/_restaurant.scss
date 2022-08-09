@@ -54,10 +54,9 @@
 .card {
   margin: 10px auto;
   border-radius: 20px;
-  max-width: 400px;
   display: flex;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
   animation: appear 2s;
   animation-fill-mode: both;
@@ -74,15 +73,15 @@
 
 .content {
   padding: 10px;
-  flex-shrink: 1;
   box-sizing: border-box;
   width: 100%;
   transition: all 300ms;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 .card:hover .content {
-  width: calc(100% - 60px);
+  width: calc(100% - 50px);
 }
 .grow {
   flex-grow: 1;
@@ -90,7 +89,7 @@
 .line {
   display: flex;
 }
-.description .price {
+.description {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -98,14 +97,12 @@
 .validate {
   display: flex;
   transition: all 300ms;
-  background-color: aquamarine;
 }
 .mark {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: aquamarine;
-  min-width: 50px;
 }
 .mark_check {
   color: #fff;
