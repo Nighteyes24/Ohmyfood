@@ -158,9 +158,8 @@ h6 {
   z-index: 100;
   pointer-events: none;
   background-color: silver;
-  opacity: 0.9;
-  -webkit-animation: disapear 4s 6s forwards;
-          animation: disapear 4s 6s forwards;
+  -webkit-animation: disapear 1s 3s forwards;
+          animation: disapear 1s 3s forwards;
 }
 
 .loader__ring {
@@ -189,8 +188,8 @@ h6 {
   border-top: 3px solid #FF79DA;
   border-right: 3px solid #FF79DA;
   border-radius: 50%;
-  -webkit-animation: animateC 4s linear infinite;
-          animation: animateC 4s linear infinite;
+  -webkit-animation: RotationA 3s linear infinite;
+          animation: RotationA 3s linear infinite;
 }
 
 span {
@@ -198,10 +197,10 @@ span {
   position: absolute;
   left: 50%;
   width: 50%;
-  height: 40px;
+  height: 45px;
   transform-origin: left;
-  -webkit-animation: animate 4s linear infinite;
-          animation: animate 4s linear infinite;
+  -webkit-animation: RotationB 3s linear infinite;
+          animation: RotationB 3s linear infinite;
 }
 
 span:before {
@@ -216,7 +215,7 @@ span:before {
   box-shadow: 0 0 20px #99E2D0;
 }
 
-@-webkit-keyframes animateC {
+@-webkit-keyframes RotationA {
   0% {
     transform: rotate(0deg);
   }
@@ -225,7 +224,7 @@ span:before {
   }
 }
 
-@keyframes animateC {
+@keyframes RotationA {
   0% {
     transform: rotate(0deg);
   }
@@ -233,7 +232,7 @@ span:before {
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes animate {
+@-webkit-keyframes RotationB {
   0% {
     transform: rotate(45deg);
   }
@@ -241,7 +240,7 @@ span:before {
     transform: rotate(405deg);
   }
 }
-@keyframes animate {
+@keyframes RotationB {
   0% {
     transform: rotate(45deg);
   }
@@ -251,28 +250,32 @@ span:before {
 }
 @-webkit-keyframes disapear {
   to {
-    transform: scale(0);
+    opacity: 0;
   }
 }
 @keyframes disapear {
   to {
-    transform: scale(0);
+    opacity: 0;
   }
 }
 @-webkit-keyframes appear {
   0% {
-    transform: translateY(50%);
+    transform: translateY(50px);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes appear {
   0% {
-    transform: translateY(50%);
+    transform: translateY(50px);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 .footer {
