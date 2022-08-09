@@ -388,61 +388,91 @@ span:before {
   gap: 80px;
 }
 
-.menu__meal {
+.menu_meal {
   width: 100%;
   list-style: none;
   margin: 0;
   padding: 20px;
 }
-.menu__meal__title {
+.menu_meal__title {
   font-weight: bold;
 }
-.menu__meal__title:after {
+.menu_meal__title:after {
   content: "";
   display: block;
   width: 32px;
   padding-top: 3px;
   border-bottom: 2px solid rgb(31, 235, 239);
 }
-.menu__meal__card {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 10px;
-  background-color: #fff;
+
+.card {
+  margin: 10px auto;
   border-radius: 20px;
+  max-width: 400px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
-  justify-content: space-around;
-  margin-top: 20px;
   -webkit-animation: appear 2s;
           animation: appear 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.card:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.card:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.card:nth-child(4) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+.content {
+  padding: 10px;
+  flex-shrink: 1;
+  box-sizing: border-box;
+  width: 100%;
+  transition: all 300ms;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card:hover .content {
+  width: calc(100% - 60px);
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.line {
+  display: flex;
+}
+
+.description .price {
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
-.menu__meal__name {
-  margin: 0;
-  font-weight: bold;
-}
-.menu__meal__recipe {
+
+.validate {
   display: flex;
-  justify-content: space-between;
+  transition: all 300ms;
+  background-color: aquamarine;
 }
-.menu__meal .menu__meal__check {
+
+.mark {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  background: aquamarine;
-  cursor: pointer;
-  border-radius: 0 20px 20px 0;
-  transition: width 6s;
+  background-color: aquamarine;
+  min-width: 50px;
 }
-.menu__meal .menu__meal__check:hover {
-  width: 25%;
-}
-.menu__meal .fa-circle-check {
-  cursor: pointer;
+
+.mark_check {
   color: #fff;
-}
-.menu__meal .fa-circle-check:hover {
-  transform: rotate(359deg);
 }/*# sourceMappingURL=main.css.map */
