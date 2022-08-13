@@ -7,7 +7,6 @@
 }
 
 .menu {
-  align-items: center;
   background-color: #f6f6f6;
   &__peek img {
     width: 100%;
@@ -31,6 +30,11 @@
     justify-content: space-around;
     gap: 80px;
   }
+  &__button {
+    width: 186px;
+    height: 50px;
+    border-radius: 20px;
+  }
 }
 
 .menu_meal {
@@ -53,6 +57,7 @@
 
 .card {
   margin: 10px auto;
+  background-color: #fff;
   border-radius: 20px;
   display: flex;
   position: relative;
@@ -69,25 +74,27 @@
   &:nth-child(4) {
     animation-delay: 1.5s;
   }
+  &:nth-child(5) {
+    animation-delay: 2s;
+  }
 }
 
 .content {
   padding: 10px;
+  flex-shrink: 1;
   box-sizing: border-box;
-  width: 100%;
+  min-width: 100%;
   transition: all 300ms;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .card:hover .content {
-  width: calc(100% - 50px);
+  min-width: calc(100% - 100px);
 }
 .grow {
   flex-grow: 1;
 }
 .line {
   display: flex;
+  align-items: center;
 }
 .description {
   overflow: hidden;
@@ -100,10 +107,13 @@
 }
 .mark {
   display: flex;
+  width: 100px;
   justify-content: center;
   align-items: center;
   background-color: aquamarine;
 }
 .mark_check {
   color: #fff;
+  transform: rotate(180deg);
+  transition-duration: 1s;
 }
