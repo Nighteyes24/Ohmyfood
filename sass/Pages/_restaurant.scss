@@ -62,7 +62,7 @@
   display: flex;
   position: relative;
   overflow: hidden;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   animation: appear 2s;
   animation-fill-mode: both;
   &:nth-child(2) {
@@ -114,6 +114,6 @@
 }
 .mark_check {
   color: #fff;
-  transform: rotate(180deg);
-  transition-duration: 1s;
+  transform: rotate(180deg) translate(100px);
+  transition-duration: 5s;
 }

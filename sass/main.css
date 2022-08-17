@@ -73,11 +73,11 @@ h6 {
   height: 70px;
   border: 1.5px;
   border-radius: 20px;
-  box-shadow: 7px 7px 7px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .button__btn:hover {
   background-color: whitesmoke;
-  box-shadow: 7px 7px 7px 0px rgba(0, 0, 0, 0.17);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .button__btn--violet {
   background-color: #f5edff;
@@ -300,7 +300,7 @@ span:before {
   text-align: center;
 }
 .header__title {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0, 4px, 10px, 1px, grey;
   margin: 0px;
   border-top: none;
   position: relative;
@@ -332,6 +332,7 @@ span:before {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .locations__restaurant img {
@@ -419,7 +420,7 @@ span:before {
   display: flex;
   position: relative;
   overflow: hidden;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   -webkit-animation: appear 2s;
           animation: appear 2s;
   -webkit-animation-fill-mode: both;
@@ -484,6 +485,6 @@ span:before {
 
 .mark_check {
   color: #fff;
-  transform: rotate(180deg);
-  transition-duration: 1s;
+  transform: rotate(180deg) translate(100px);
+  transition-duration: 5s;
 }/*# sourceMappingURL=main.css.map */
