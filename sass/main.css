@@ -325,6 +325,12 @@ span:before {
   color: #fff;
   text-decoration: none;
 }
+.footer__item {
+  padding: 5px;
+}
+.footer__title {
+  margin-bottom: 15px;
+}
 
 .header {
   background: #fff;
@@ -418,7 +424,7 @@ span:before {
   display: flex;
   position: relative;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
   -webkit-animation: appear 2s;
           animation: appear 2s;
   -webkit-animation-fill-mode: both;
@@ -474,15 +480,23 @@ span:before {
 .line {
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 
 .description {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .validate {
   display: flex;
   transition: all 300ms;
+}
+
+.price {
+  font-weight: 900;
 }/*# sourceMappingURL=main.css.map */

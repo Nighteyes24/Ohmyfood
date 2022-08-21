@@ -63,7 +63,7 @@
   display: flex;
   position: relative;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 6px 6px;
   animation: appear 2s;
   animation-fill-mode: both;
   &:nth-child(2) {
@@ -112,13 +112,20 @@
 .line {
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 .description {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .validate {
   display: flex;
   transition: all 300ms;
+}
+.price {
+  font-weight: 900;
 }
