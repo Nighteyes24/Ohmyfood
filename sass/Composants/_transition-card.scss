@@ -52,12 +52,19 @@
     padding: 5px;
   }
   &__description {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  & p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0px;
+    line-height: 1.5;
   }
   &__validate {
     display: flex;

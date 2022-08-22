@@ -437,12 +437,19 @@ span:before {
   padding: 5px;
 }
 .card__description {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0px;
+  line-height: 1.5;
 }
 .card__validate {
   display: flex;
